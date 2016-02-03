@@ -1,0 +1,20 @@
+(function(){ 
+    var config = {
+        "from" : {
+            "baseurl" : "http://gitlab1.example.com",
+            "token" : "AAAAAAAAAAAAAAAAAA",
+            "private-ssh-key" : "fromprivatekey",
+        },
+        "to" : {
+            "baseurl" : "http://gitlab2.example.com",
+            "token" : "AAAAAAAAAAAAAAAAAA",
+            "private-ssh-key" : "toprivatekey",
+        },
+        "groups" : ["*"],
+        "two-way" : true,
+        "port" : 8080
+    };
+
+    module.exports = config;
+
+}).call(this);
